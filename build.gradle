@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter('5.10.2')
+        }
+    }
+}
+
+java {
+}
+
+application {
+    mainClass = 'cz.horadraka.sslprobe.SSLProbe'
+}
